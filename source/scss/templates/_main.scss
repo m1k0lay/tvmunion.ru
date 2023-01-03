@@ -35,10 +35,21 @@
   }
 }
 
+.banner-carousel .slide-overlay {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
 .slider-content {
   position: relative;
   height: 100%;
   width: 100%;
+  z-index: 2;
 }
 
 .slide-title-box {
@@ -518,7 +529,7 @@
 }
 
 
-/* Service box 
+/* Service box
 
 .ts-service-box .ts-service-icon i {
   font-size: 24px;
@@ -1219,13 +1230,11 @@ img.testimonial-thumb {
   border-left: 3px solid $color-primary;
 }
 
-
-
-
 /* Footer about us */
 
 .footer-logo {
   margin-bottom: 25px;
+  height: 80px;
 }
 
 

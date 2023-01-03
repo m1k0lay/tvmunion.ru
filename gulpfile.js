@@ -156,6 +156,7 @@ gulp.task(
     "others:build",
     gulp.parallel("watch:build", function () {
       bs.init({
+        watch: true,
         server: {
           baseDir: path.build.dirDev,
         },
